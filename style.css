@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(stadion.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.container div{
+    flex-grow: 1;
+    text-align: center;
+}
+.koptok{
+    animation: anime 5s linear infinite;
+}
+@keyframes anime{
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(25px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    75%{
+        transform: translateY(-25px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.icon{
+    animation: logo 10s linear infinite;
+}
+.icon.bunyodkor{
+    animation-delay: -5s;
+}
+@keyframes logo{
+    0%{
+        transform: perspective(500px) rotateY(0deg);
+    }
+    25%{
+        transform: perspective(500px) rotateY(25deg);
+    }
+    50%{
+        transform: perspective(500px) rotateY(0deg);
+    }
+    75%{
+        transform: perspective(500px) rotateY(-25deg);
+    }
+    100%{
+        transform: perspective(500px) rotateY(0deg);
+    }
+}
+h2 {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    margin-top: 40px;
+    padding: 20px 40px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-size: 80px;
+    background: rgba(0,0,0,0.2);
+    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+}
+h3{
+    position: fixed;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    padding: 10px 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-size: 26px;
+    background: rgba(0,0,0,.5);
+    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+}
+h3 span{
+    background: #fff;
+    color: #262626;
+    font-size: 20px;
+    display: block;
+    margin: 10px 0;
+}
